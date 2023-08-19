@@ -2,6 +2,7 @@ import HomeSection from '@/Components/HomeSections/HomeSection';
 import Google from "../components/google/GoogleAnalitycs"
 
 
+
 export default function Home() {
   return (
     <>
