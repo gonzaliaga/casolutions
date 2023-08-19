@@ -1,9 +1,13 @@
-import {Button} from '@nextui-org/button'; 
+import HomeSection from '@/Components/HomeSections/HomeSection';
+import Google from "../components/google/GoogleAnalitycs"
 
-export default function Page() {
+
+export default function Home() {
   return (
-    <div>
-      <Button>Click</Button>
-    </div>
+    <>
+
+      <HomeSection/>
+      <Google/>
+    </>
   )
 }
