@@ -1,7 +1,25 @@
-import  dataTeam  from '@/data'
+import { Teams } from '@/data'
+import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 
-export default function Team() {
+export default function Team({ data }: { data: Teams }) {
+    const { name, description, image, linkedin } = data
+
     return (
-        <div>Team</div>
+
+        <Card className="py-4">
+            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+                <p className="text-tiny uppercase font-bold">{name}</p>
+                <small className="text-default-500">{description}</small>
+                <h4 className="font-bold text-large">{linkedin}</h4>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2">
+                <Image
+                    alt="Card background"
+                    className="object-cover rounded-xl"
+                    src={image}
+                    width={270}
+                />
+            </CardBody>
+        </Card>
     )
 }
