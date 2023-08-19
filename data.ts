@@ -9,7 +9,7 @@ export type Teams = {
 const dataTeam = [
     {
     id: 1,
-    name: "Gonzalo",
+    name: "Gonzalo Cuellar Aliaga",
     description: "Co-founder y CTO de 7Dev.",
     image: "https://res.cloudinary.com/parcelas/image/upload/v1692406466/gonzaimg_lhsmlm.jpg",
     linkedin: "https://www.linkedin.com/in/gonzalo-cuellar-aliaga/"
