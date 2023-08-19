@@ -1,5 +1,5 @@
 import HomeSection from '@/Components/HomeSections/HomeSection';
-import Google from "../components/google/GoogleAnalitycs"
+import Google from "@/Components/Google/GoogleAnalitycs"
 
 
 
