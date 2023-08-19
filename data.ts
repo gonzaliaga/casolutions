@@ -6,7 +6,7 @@ export type Teams = {
     linkedin: string
 }
 
-const dataTeam : Teams [] = [
+const dataTeam = [
     {
     id: 1,
     name: "Gonzalo",
