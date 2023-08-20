@@ -26,7 +26,7 @@ export default function HomeSection() {
   const springyGradient = hsl.to((h, s, l) => `radial-gradient(hsl(${h}, ${s * 0.7}%, ${l}%), hsl(${h},${s * 0.4}%, ${l * 0.2}%))`)
   return (
    
-<aw.div style={{ background: springyGradient, width: '100%', height: '100vh', position: 'relative' }}>
+<aw.div className="flex flex-row justify-center justify-items-center gap-0" style={{ background: springyGradient, width: '100%', height: '100vh'}}>
 <HomeTitle />
   <Canvas style={{ height: '100vh' }} camera={{ position: [0, 0, 2] }}>
     <Suspense fallback={null}>

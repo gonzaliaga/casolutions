@@ -9,9 +9,19 @@
 	--color-subtitle-bg: #ac1122;
 }
 
+.vertical-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10rem;
+	margin-left: 5rem;
+	height: 50vh; 
+  }
+
 .content__title {
 	font-family: 'Playfair Display', serif;
-	font-size: 10vw;
+	font-size: 5rem;
 	font-weight: normal;
 	color: var(--color-title);
 	text-align: center;
@@ -20,16 +30,10 @@
 }
 
 .content__subtitle {
-	font-size: 1.25em;
-	background: var(--color-subtitle-bg);
-	color: var(--color-subtitle);
-	padding: 0.45em 0.5em;
-	line-height: 1;
 	margin: 0;
-	letter-spacing: 0.5em;
-	text-indent: 0.5em;
-	font-weight: bold;
-	text-transform: uppercase;
+	writing-mode: vertical-lr;
+	text-orientation: mixed;
+	font-size: 24px;
 
 }
 
@@ -50,6 +54,7 @@
 	.content__title {
 		font-size: 3em;
 	}
+
 	.content__subtitle {
 		font-size: 0.85em;
 	}
