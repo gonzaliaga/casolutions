@@ -27,10 +27,11 @@ export default function HomeSection() {
   return (
    
 <aw.div style={{ background: springyGradient, width: '100%', height: '100vh', position: 'relative' }}>
-<HomeTitle />
+<HomeTitle/>
   <Canvas style={{ height: '100vh' }} camera={{ position: [0, 0, 2] }}>
     <Suspense fallback={null}>
       <OrbitControls autoRotate enableRotate={false} enablePan={false} enableZoom={false} />
+
       <Marble step={step} setStep={setStep} />
       <Environment preset="warehouse" />
     </Suspense>
